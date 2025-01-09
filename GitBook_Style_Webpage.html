@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitBook Style Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 250px;
+            background-color: #2d2d2d;
+            color: white;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            position: fixed;
+            overflow-y: auto;
+        }
+
+        .sidebar h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #444;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+            box-sizing: border-box;
+            width: calc(100% - 250px);
+        }
+
+        .main-content h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .main-content p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>My GitBook</h1>
+        <ul>
+            <li><a href="#chapter1">Chapter 1</a></li>
+            <li><a href="#chapter2">Chapter 2</a></li>
+            <li><a href="#chapter3">Chapter 3</a></li>
+            <li><a href="#chapter4">Chapter 4</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <section id="chapter1">
+            <h2>Chapter 1</h2>
+            <p>This is the content for Chapter 1. You can write detailed descriptions, add examples, and more.</p>
+        </section>
+
+        <section id="chapter2">
+            <h2>Chapter 2</h2>
+            <p>This is the content for Chapter 2. Add more sections as needed.</p>
+        </section>
+
+        <section id="chapter3">
+            <h2>Chapter 3</h2>
+            <p>This is the content for Chapter 3. Include images, code snippets, or diagrams to enrich the content.</p>
+        </section>
+
+        <section id="chapter4">
+            <h2>Chapter 4</h2>
+            <p>This is the content for Chapter 4. Organize your content in a way that readers find intuitive and helpful.</p>
+        </section>
+    </div>
+</body>
+</html>
